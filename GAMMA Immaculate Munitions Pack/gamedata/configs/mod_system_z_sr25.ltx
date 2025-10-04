@@ -1,0 +1,108 @@
+![wpn_sr25]
+fire_modes                  = -1, 1
+
+;------------- SOUNDS ----------------------------------------------------------	
+
+scripted_snd_ammo_check                  = weapons\m4\magcheck_shared
+scripted_snd_ammo_check_empty            = weapons\m4\magcheck_shared
+scripted_snd_ammo_check_jammed           = weapons\m4\magcheck_shared
+scripted_snd_ammo_check_empty_jammed     = weapons\m4\magcheck_shared
+;scripted_snd_ammo_check_no_mag           = $no_sound
+;scripted_snd_bore                        = 
+		
+snd_draw                                 = weapons\m4\draw_m4
+snd_reload_empty                         = weapons\m4\reload_empty_shared
+snd_reload_misfire                       = weapons\m4\unjam_aer
+snd_holster                              = weapons\m4\holster_m4
+snd_reload                               = weapons\m4\reload_shared
+
+scripted_snd_reload_misfire_empty        = weapons\m4\unjam_aer
+
+;------------- HUD -----------------------------------------------------------
+![wpn_sr25_hud]
+        hands_orientation                = 1.54753, 0.031508, 0
+        hands_orientation_16x9           = 1.54753, 0.031508, 0
+        hands_position                   = 0.023045, -0.01021, 0.020341
+        hands_position_16x9              = 0.023045, -0.01021, 0.020341
+		
+        item_orientation                 = -1.563406, -0.054605, 0
+        item_position                    = 0.00052, 0.001774, 0
+
+        aim_hud_offset_pos               = -0.062593, 0.012068, -0.03
+        aim_hud_offset_pos_16x9          = -0.062593, 0.012068, -0.03
+        aim_hud_offset_rot               = 0.000143, -0.000216, 0
+        aim_hud_offset_rot_16x9          = 0.000143, -0.000216, 0
+
+fire_bone2                               = 		
+
+anm_show                        = aer_draw, idle
+anm_hide                        = aer_holster, idle
+anm_idle                        = aer_idle, idle
+anm_idle_aim                    = aer_idle_aim, idle
+anm_idle_aim_moving             = aer_idle_aim, idle
+anm_idle_moving_crouch          = aer_idle, idle
+anm_idle_aim_moving_crouch      = aer_idle_aim, idle, 0.7
+anm_idle_moving                 = aer_walk, idle, 0.75
+anm_idle_sprint                 = aer_sprint, idle
+anm_reload                      = aer_reload, reload
+anm_reload_empty                = aer_reload_empty, reload_empty
+anm_shots                       = aer_shoot_hip
+anm_shot_l                      = aer_shoot_hip, aer_shoot_last
+anm_shots_aim                   = aer_shoot_aim
+anm_shots_l_aim                 = aer_shoot_aim, aer_shoot_aim_last
+anm_reload_misfire              = aer_unjam, unjam
+anm_bore                        = aer_inspect, idle
+anm_switch                      = aer_switchmode, idle
+
+; Empty
+anm_show_empty                           = aer_draw, idle_empty
+anm_idle_empty                           = aer_idle, idle_empty
+anm_hide_empty                           = aer_holster, idle_empty
+anm_idle_aim_empty                       = aer_idle_aim, idle_empty
+anm_idle_aim_moving_empty                = aer_idle_aim, idle_empty
+anm_idle_moving_crouch_empty             = aer_walk, idle_empty
+anm_idle_aim_moving_crouch_empty         = aer_idle_aim, idle_empty
+anm_idle_moving_empty                    = aer_walk, idle_empty
+anm_idle_sprint_empty                    = aer_sprint, idle_empty
+anm_shots_empty                          = aer_shoot_hip, idle_empty
+anm_bore_empty				             = aer_inspect, idle_empty
+
+; Jammed
+
+anm_bore_jammed                          = aer_inspect_jammed, inspect_jammed
+anm_idle_jammed                          = aer_idle, idle_jammed
+anm_idle_aim_jammed                      = aer_idle_aim, idle_jammed
+
+
+
+; Mag Check
+anm_ammo_check                           = aer_magcheck, magcheck
+
+anm_ammo_check_empty                     = aer_magcheck, magcheck_empty       ; Later standardize all animation names.
+
+; Sprint Transitions
+
+anm_sprint_end                           = aer_sprint_end, idle
+anm_sprint_end_empty                     = aer_sprint_end, idle_empty
+anm_sprint_end_jammed                    = aer_sprint_end, idle_jammed
+anm_sprint_start                         = aer_sprint_start, idle
+anm_sprint_start_empty                   = aer_sprint_start, idle_empty
+anm_sprint_start_jammed                  = aer_sprint_start, idle_jammed
+
+;anm_walk2sprint                          = kac_sprint_start, idle
+
+;anm_sprint2walk                          = kac_sprint_end
+
+ts_pattern_sprint_end                    = anm_idle_sprint, ^anm_idle.*, anm_sprint_end
+ts_pattern_sprint_start                  = .+, anm_idle_sprint, anm_sprint_start, 1
+ts_strict_sprint_end_move                = anm_sprint_start, anm_idle_moving, anm_sprint_end
+ts_pattern_sprint2walk_aim               = anm_sprint_start, ^anm_idle_aim.*, anm_sprint_end, 1
+ts_strict_sprint2walk_idle               = anm_sprint_start, anm_idle, anm_sprint_end
+ts_strict_sprint2aim                     = anm_idle_sprint, anm_idle_aim, anm_sprint_end
+ts_strict_sprint2inspect                 = anm_idle_sprint, anm_bore, anm_sprint_end
+ts_strict_walk2sprint_inspect            = anm_sprint_start, anm_bore, anm_sprint_end
+
+
+;ts_pattern_walk2sprint                   = .+, anm_idle_sprint, anm_walk2sprint, 1
+
+;ts_pattern_sprint2walk                   = anm_idle_sprint, ^anm_idle.*, anm_sprint2walk, 1
