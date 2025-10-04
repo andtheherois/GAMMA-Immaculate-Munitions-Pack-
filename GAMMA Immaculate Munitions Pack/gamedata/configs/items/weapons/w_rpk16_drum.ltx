@@ -232,6 +232,14 @@ snd_5_layer7													  = weapons\_shells\stereo\556mm_shell_soil8
 snd_5_layer8													  = weapons\_shells\stereo\556mm_shell_soil9
 ;________________
 
+	s3ds_reticle_size 	=
+	s3ds_eye_relief 	=
+	s3ds_exit_pupil		=
+	s3ds_chroma_power	=
+	magnifications 		=	
+
+	aimpos				= false
+	
 [wpn_rpk74_16_drum_hud]:hud_base
 item_visual                 = anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_hud.ogf
 attach_place_idx                         = 0
@@ -658,13 +666,6 @@ zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
 
 inv_weight                               = 4.85
-
-	s3ds_reticle_size 	= 3.9
-	s3ds_eye_relief 	= 1.5
-	s3ds_exit_pupil		= 0.55	
-	s3ds_chroma_power	= 0.031		
-	s3ds_reticle_type 	= 0
-	magnifications = 2.8	
 	
 [wpn_rpk74_16_drum_acog_hud]:wpn_rpk74_16_drum_hud
 
@@ -694,13 +695,6 @@ scope_dynamic_zoom                                 = off
 inv_weight                               = 5.01
 
 use_alt_aim_hud							 = true
-
-	s3ds_reticle_size 	= 3.9
-	s3ds_eye_relief 	= 1.5
-	s3ds_exit_pupil		= 0.55	
-	s3ds_chroma_power	= 0.031		
-	s3ds_reticle_type 	= 0
-	magnifications = 2.8	
 	
 [wpn_rpk74_16_drum_triji_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_triji_hud.ogf
@@ -735,14 +729,6 @@ zoom_rotate_time                         = 0.25
 zoom_step_count 						 = 1
 
 use_alt_aim_hud                  = true	
-
-	s3ds_reticle_size 	= 6.1
-	s3ds_eye_relief 	= 2
-	s3ds_chroma_power	= 0.04	
-	s3ds_reticle_type 	= 4
-	ms_count 			= 3
-	ms_colors			= scope_black, scope_red_dim, scope_red
-	magnifications 		= 1,4	
 	
 [wpn_rpk74_16_drum_specter_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_specter_hud.ogf
@@ -773,14 +759,6 @@ zoom_step_count 						 = 1
 
 use_alt_aim_hud                  = true	
 
-	s3ds_reticle_size 	= 6.1
-	s3ds_eye_relief 	= 2
-	s3ds_chroma_power	= 0.04	
-	s3ds_reticle_type 	= 4
-	ms_count 			= 3
-	ms_colors			= scope_black, scope_red_dim, scope_red
-	magnifications 		= 1,4
-	
 [wpn_rpk74_16_drum_spec_alt_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_specalt_hud.ogf
         aim_hud_offset_pos               = -0.047051, 0.010019, -0.101136
@@ -806,12 +784,6 @@ scope_status                                       = 1
 scope_zoom_factor                                  = 15
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
-
-	s3ds_reticle_size 	= 4.35
-	s3ds_eye_relief 	= 4
-	s3ds_exit_pupil		= 0.4	
-	s3ds_ffp			= 1	
-	magnifications 		= 1-8
 	
 [wpn_rpk74_16_drum_leupold_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_leupold_hud.ogf
@@ -833,12 +805,6 @@ scope_status                                       = 1
 scope_zoom_factor                                  = 15
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
-
-	s3ds_reticle_size 	= 4.35
-	s3ds_eye_relief 	= 4
-	s3ds_exit_pupil		= 0.4	
-	s3ds_ffp			= 1	
-	magnifications = 1-8
 
 use_alt_aim_hud			= true	
 [wpn_rpk74_16_drum_mark8_rmr_hud]:wpn_rpk74_16_drum_hud
@@ -866,14 +832,6 @@ scope_status                                       = 1
 scope_zoom_factor                                  = 20
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
-
-	s3ds_reticle_size 	= 4.38	
-	s3ds_eye_relief 	= 1.98
-	s3ds_chroma_power	= 0.05	
-	s3ds_image_type 	= 1
-	s3ds_reticle_type	= 7
-	ms_count 			= 2
-	magnifications 		= 1-6	
 	
 [wpn_rpk74_16_drum_pn23_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_pn23_hud.ogf
@@ -895,12 +853,6 @@ scope_status                                       = 1
 scope_zoom_factor                                  = 12
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = on
-
-	s3ds_reticle_size 	= 5
-	s3ds_image_type 	= 2
-	s3ds_reticle_type 	= 6
-	ms_count 			= 2
-	magnifications 		= 1-10
 	
 [wpn_rpk74_16_drum_gauss_sight_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_gauss_hud.ogf
@@ -923,16 +875,6 @@ scope_status            = 1
 scope_zoom_factor       = 20
 zoom_rotate_time        = 0.25
 scope_dynamic_zoom      = on
-
-	s3ds_reticle_size 	= 4.1
-	s3ds_eye_relief 	= 2.2
-	s3ds_ffp			= 1		
-	s3ds_chroma_power	= 0.045	
-	s3ds_reticle_type 	= 4
-	ms_count 			= 3
-	ms_colors			= scope_black, scope_red_dim, scope_red	
-	magnifications 		= 1,6
-	
 
 [wpn_rpk74_16_drum_ps320_hud]:wpn_rpk74_16_drum_hud
 item_visual                		= anomaly_weapons\wpn_rpk16_drum\wpn_rpk16_ps320_hud.ogf
