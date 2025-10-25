@@ -1,0 +1,117 @@
+
+![wpn_dtmdr_black]
+
+scripted_snd_sprint2walk                 = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint                 = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_empty           = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_empty           = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_jammed_empty    = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_jammed_empty    = weapons\mdr\mdr_idle2sprint
+
+![wpn_dtmdr_black_hud]
+
+        ; Transition Definitions
+
+
+        ts_pattern_walk2sprint      = .+, anm_idle_sprint, anm_walk2sprint, 1
+
+        ts_pattern_sprint2walk      = anm_idle_sprint, ^anm_idle.*, anm_sprint2walk, 1
+        ts_pattern_sprint2walk_aim  = anm_walk2sprint, ^anm_idle_aim.*, anm_sprint2walk, 1
+        ts_strict_sprint2walk_idle  = anm_walk2sprint, anm_idle, anm_sprint2walk
+        ts_strict_sprint2walk_move  = anm_walk2sprint, anm_idle_moving, anm_sprint2walk
+
+        ;ts_pattern_idle2aim         = ^anm_idle.*, ^anm_idle_aim$, anm_idle2aim, 1
+        ts_strict_sprint2aim        = anm_idle_sprint, anm_idle_aim, anm_sprint2walk
+
+        ts_strict_sprint2inspect        = anm_idle_sprint, anm_bore, anm_sprint2walk
+        ts_strict_walk2sprint_inspect        = anm_walk2sprint, anm_bore, anm_sprint2walk
+
+        ts_pattern_reload_interrupt     = anm_add_cartridge, ^anm_idle.*, anm_close 
+        ts_pattern_reload_empty_interrupt     = anm_add_cartridge_empty, ^anm_idle.*, anm_close   
+		
+anm_walk2sprint        			 		 = hand_dtmdr_idle2sprint, idle, 1.1
+anm_sprint2walk        		 	 		 = hand_dtmdr_sprint2idle, idle, 1.1
+anm_walk2sprint_empty        			 = hand_dtmdr_idle2sprint, idle_empty, 1.1 
+anm_sprint2walk_empty        		 	 = hand_dtmdr_sprint2idle, idle_empty, 1.1
+anm_walk2sprint_jammed        			 = hand_dtmdr_idle2sprint, idle_jammed, 1.1 
+anm_sprint2walk_jammed        		 	 = hand_dtmdr_sprint2idle, idle_jammed, 1.1 
+anm_walk2sprint_empty_jammed        	 = hand_dtmdr_idle2sprint, idle_jammed_empty, 1.1
+anm_sprint2walk_empty_jammed        	 = hand_dtmdr_sprint2idle, idle_jammed_empty, 1.1
+
+![wpn_dtmdr]
+
+scripted_snd_sprint2walk                 = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint                 = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_empty           = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_empty           = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_jammed_empty    = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_jammed_empty    = weapons\mdr\mdr_idle2sprint
+
+![wpn_dtmdr_hud]
+
+        ; Transition Definitions
+
+
+        ts_pattern_walk2sprint      = .+, anm_idle_sprint, anm_walk2sprint, 1
+
+        ts_pattern_sprint2walk      = anm_idle_sprint, ^anm_idle.*, anm_sprint2walk, 1
+        ts_pattern_sprint2walk_aim  = anm_walk2sprint, ^anm_idle_aim.*, anm_sprint2walk, 1
+        ts_strict_sprint2walk_idle  = anm_walk2sprint, anm_idle, anm_sprint2walk
+        ts_strict_sprint2walk_move  = anm_walk2sprint, anm_idle_moving, anm_sprint2walk
+
+        ;ts_pattern_idle2aim         = ^anm_idle.*, ^anm_idle_aim$, anm_idle2aim, 1
+        ts_strict_sprint2aim        = anm_idle_sprint, anm_idle_aim, anm_sprint2walk
+
+        ts_strict_sprint2inspect        = anm_idle_sprint, anm_bore, anm_sprint2walk
+        ts_strict_walk2sprint_inspect        = anm_walk2sprint, anm_bore, anm_sprint2walk
+
+        ts_pattern_reload_interrupt     = anm_add_cartridge, ^anm_idle.*, anm_close 
+        ts_pattern_reload_empty_interrupt     = anm_add_cartridge_empty, ^anm_idle.*, anm_close   
+		
+anm_walk2sprint        			 		 = hand_dtmdr_idle2sprint, idle, 1.1
+anm_sprint2walk        		 	 		 = hand_dtmdr_sprint2idle, idle, 1.1
+anm_walk2sprint_empty        			 = hand_dtmdr_idle2sprint, idle_empty, 1.1 
+anm_sprint2walk_empty        		 	 = hand_dtmdr_sprint2idle, idle_empty, 1.1
+anm_walk2sprint_jammed        			 = hand_dtmdr_idle2sprint, idle_jammed, 1.1 
+anm_sprint2walk_jammed        		 	 = hand_dtmdr_sprint2idle, idle_jammed, 1.1 
+anm_walk2sprint_empty_jammed        	 = hand_dtmdr_idle2sprint, idle_jammed_empty, 1.1
+anm_sprint2walk_empty_jammed        	 = hand_dtmdr_sprint2idle, idle_jammed_empty, 1.1
+
+![wpn_dtmdr_black_sup]
+
+scripted_snd_sprint2walk                 = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint                 = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_empty           = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_empty           = weapons\mdr\mdr_idle2sprint
+scripted_snd_sprint2walk_jammed_empty    = weapons\mdr\mdr_sprint2idle
+scripted_snd_walk2sprint_jammed_empty    = weapons\mdr\mdr_idle2sprint
+
+![wpn_dtmdr_black_sup_hud]
+
+        ; Transition Definitions
+
+
+        ts_pattern_walk2sprint      = .+, anm_idle_sprint, anm_walk2sprint, 1
+
+        ts_pattern_sprint2walk      = anm_idle_sprint, ^anm_idle.*, anm_sprint2walk, 1
+        ts_pattern_sprint2walk_aim  = anm_walk2sprint, ^anm_idle_aim.*, anm_sprint2walk, 1
+        ts_strict_sprint2walk_idle  = anm_walk2sprint, anm_idle, anm_sprint2walk
+        ts_strict_sprint2walk_move  = anm_walk2sprint, anm_idle_moving, anm_sprint2walk
+
+        ;ts_pattern_idle2aim         = ^anm_idle.*, ^anm_idle_aim$, anm_idle2aim, 1
+        ts_strict_sprint2aim        = anm_idle_sprint, anm_idle_aim, anm_sprint2walk
+
+        ts_strict_sprint2inspect        = anm_idle_sprint, anm_bore, anm_sprint2walk
+        ts_strict_walk2sprint_inspect        = anm_walk2sprint, anm_bore, anm_sprint2walk
+
+        ts_pattern_reload_interrupt     = anm_add_cartridge, ^anm_idle.*, anm_close 
+        ts_pattern_reload_empty_interrupt     = anm_add_cartridge_empty, ^anm_idle.*, anm_close   
+		
+anm_walk2sprint        			 		 = hand_dtmdr_idle2sprint_sup308, idle, 1.1
+anm_sprint2walk        		 	 		 = hand_dtmdr_sprint2idle_sup308, idle, 1.1
+anm_walk2sprint_empty        			 = hand_dtmdr_idle2sprint_sup308, idle_empty, 1.1 
+anm_sprint2walk_empty        		 	 = hand_dtmdr_sprint2idle_sup308, idle_empty, 1.1
+anm_walk2sprint_jammed        			 = hand_dtmdr_idle2sprint_sup308, idle_jammed, 1.1 
+anm_sprint2walk_jammed        		 	 = hand_dtmdr_sprint2idle_sup308, idle_jammed, 1.1 
+anm_walk2sprint_empty_jammed        	 = hand_dtmdr_idle2sprint_sup308, idle_jammed_empty, 1.1
+anm_sprint2walk_empty_jammed        	 = hand_dtmdr_sprint2idle_sup308, idle_jammed_empty, 1.1
